@@ -20,6 +20,6 @@
 3. Unmouting - called When the component is removed from DOM
     a. componentWillUnmount - invoked immediately before a component is unmounted and destroyed. We can make any cancelling network requests, removing event handlers. Should not called setState Method. 
 4. Error Handling - called when there is an error in constructor or life cycle method or rendering. 
-    static getDerivedStateFromError(erpr) - used to render a fallback UI after an error is thrown.
+    static getDerivedStateFromError(erpr) - used to render a fallback UI after an error is thrown. Create <Errorboundary/> component class and handle with the static method.
     componentDidCatch(error,info) - this is used to log the error information. 
  */
