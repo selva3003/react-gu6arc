@@ -1,5 +1,7 @@
 //The useReducer hook is used for complex state manipulations and state transitions
-
+//useReducer is usually preferable to useState when we have complex state logic or
+//when the next state depends on the previous one. 
+//useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
 //import useReducer from react as shown in the below snippet:
 import React, { useReducer } from 'react';
 
