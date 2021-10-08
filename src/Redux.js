@@ -2,7 +2,17 @@
   We can pass down the data from parent component to the child component. if we have to pass data from child to parent, then we have to lift the state up. 
   it is ok for the lift the state up to the single component. if the data have to shared for multiple components, the we go Redux. 
   Redux is a centrailized store where we can store the state and any component can get the smae state data from the store. 
-  
+  An action is dispatched when a user interacts with the application.
+
+The root reducer function is called with the current state and the dispatched action. 
+The root reducer may divide the task among smaller reducer functions, which ultimately returns a new state.
+
+The store notifies the view by executing their callback functions.
+
+The view can retrieve updated state and re-render again.
+
+
+
   import { Provider } from 'react-redux'
   import { createStore } from 'redux';
 
